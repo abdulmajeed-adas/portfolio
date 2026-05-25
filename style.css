@@ -138,9 +138,8 @@ section {
 .parallax-desk-wrap {
   position: absolute;
   bottom: -8%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
+  left: 0;
+  width: 100%;
   z-index: 2;
   pointer-events: none;
 }
