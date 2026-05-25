@@ -112,10 +112,12 @@ section {
 #hero {
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  padding: 0 60px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 160px 60px 0;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 .parallax-layers {
@@ -137,7 +139,7 @@ section {
 /* Layer 3: desk image sitting at bottom center */
 .parallax-desk-wrap {
   position: absolute;
-  bottom: -25%;
+  bottom: -33%;
   left: 0;
   width: 100%;
   z-index: 2;
@@ -152,9 +154,11 @@ section {
 
 .hero-content {
   max-width: 640px;
+  width: 100%;
   position: relative;
   z-index: 1;
   will-change: transform;
+  text-align: center;
 }
 
 .hero-greeting {
@@ -187,7 +191,7 @@ section {
   margin-bottom: 36px;
 }
 
-.hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
+.hero-btns { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
 
 /* ── Buttons ── */
 .btn-primary {
