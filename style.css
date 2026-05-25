@@ -753,7 +753,10 @@ button.project-link {
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
-  nav { padding: 14px 20px; }
+  nav {
+    padding: 12px 20px;
+    justify-content: center;
+  }
   #hero { padding: 0 24px; }
   .container { padding: 0 24px; }
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -761,5 +764,30 @@ button.project-link {
   .skills-grid { grid-template-columns: 1fr; }
 
   .nav-name { display: none; }
-  .nav-links { gap: 16px; }
+
+  .nav-links {
+    gap: 4px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: var(--text);
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .nav-links a:hover {
+    background: var(--accent-light);
+    color: var(--accent);
+  }
+
+  .nav-resume-btn {
+    font-size: 0.82rem;
+    padding: 6px 12px;
+  }
 }
