@@ -1,14 +1,3 @@
-// ── Mobile nav ──
-function toggleNav() {
-  document.getElementById('nav-links').classList.toggle('open');
-  document.getElementById('nav-hamburger').classList.toggle('open');
-}
-
-function closeNav() {
-  document.getElementById('nav-links').classList.remove('open');
-  document.getElementById('nav-hamburger').classList.remove('open');
-}
-
 // ── Project image gallery switcher ──
 function switchImg(mainId, thumb) {
   document.getElementById(mainId).src = thumb.src;
