@@ -135,7 +135,7 @@ section {
 }
 
 /* Layer 3: desk image sitting at bottom center */
-.parallax-desk {
+.parallax-desk-wrap {
   position: absolute;
   bottom: -8%;
   left: 50%;
@@ -143,6 +143,12 @@ section {
   width: 80%;
   z-index: 1;
   pointer-events: none;
+}
+
+.parallax-desk {
+  width: 100%;
+  display: block;
+  will-change: transform;
 }
 
 .hero-content {
