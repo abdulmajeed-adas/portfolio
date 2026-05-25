@@ -141,7 +141,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
-  z-index: 1;
+  z-index: 3;
   pointer-events: none;
 }
 
@@ -154,7 +154,7 @@ section {
 .hero-content {
   max-width: 640px;
   position: relative;
-  z-index: 2;
+  z-index: 1;
   will-change: transform;
 }
 
