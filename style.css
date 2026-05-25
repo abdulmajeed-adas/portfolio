@@ -110,7 +110,7 @@ section {
 
 /* ── Hero ── */
 #hero {
-  min-height: 100vh;
+  min-height: 130vh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
