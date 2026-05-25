@@ -139,7 +139,7 @@ section {
 /* Layer 3: desk image sitting at bottom center */
 .parallax-desk-wrap {
   position: absolute;
-  bottom: -33%;
+  bottom: 0%;
   left: 0;
   width: 100%;
   z-index: 2;
