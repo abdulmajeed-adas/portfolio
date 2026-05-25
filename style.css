@@ -134,7 +134,7 @@ section {
   will-change: transform;
 }
 
-/* Layer 2: right half, slightly taller for travel room */
+/* Layer 2: right half */
 #parallax-2 {
   position: absolute;
   top: -15%;
@@ -143,19 +143,6 @@ section {
   bottom: -15%;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  will-change: transform;
-}
-
-/* Layer 3: right side, foreground */
-#parallax-3 {
-  position: absolute;
-  top: -10%;
-  right: 0;
-  width: 40%;
-  bottom: -10%;
-  background-size: cover;
-  background-position: center left;
   background-repeat: no-repeat;
   will-change: transform;
 }
