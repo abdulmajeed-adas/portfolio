@@ -234,26 +234,8 @@ section {
 /* ── About ── */
 #about {
   padding: 100px 0;
-  background:
-    repeating-linear-gradient(
-      92deg,
-      rgba(255,255,255,0.015) 0px,
-      rgba(255,255,255,0.015) 1px,
-      transparent 1px,
-      transparent 60px
-    ),
-    repeating-linear-gradient(
-      180deg,
-      rgba(0,0,0,0.08) 0px,
-      rgba(0,0,0,0.08) 1px,
-      transparent 1px,
-      transparent 8px
-    ),
-    linear-gradient(160deg, #2a1f14 0%, #1e1510 40%, #2d2318 70%, #1a110a 100%);
+  background: #fff;
 }
-
-#about .section-title { color: #f5ede0; }
-#about .section-title::after { background: var(--accent); }
 
 .about-grid {
   display: grid;
@@ -263,13 +245,13 @@ section {
 }
 
 .about-text p {
-  color: #c9b99a;
+  color: var(--text-muted);
   line-height: 1.75;
   margin-bottom: 16px;
   font-size: 0.97rem;
 }
 
-.about-text p strong { color: #f0e4d0; }
+.about-text p strong { color: var(--text); }
 
 .about-cards {
   display: grid;
@@ -278,8 +260,8 @@ section {
 }
 
 .about-card {
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.12);
+  background: var(--bg);
+  border: 1px solid var(--border);
   border-radius: 12px;
   padding: 20px;
   display: flex;
@@ -298,7 +280,7 @@ section {
 
 .card-label {
   font-size: 0.8rem;
-  color: #a89070;
+  color: var(--text-muted);
   font-weight: 500;
 }
 
