@@ -159,13 +159,11 @@ section {
   z-index: 1;
   will-change: transform;
   text-align: center;
-  background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.82);
   border-radius: 20px;
   padding: 40px 48px;
-  border: 1px solid rgba(255,255,255,0.8);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  border: 1px solid rgba(255,255,255,0.9);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
 }
 
 .hero-greeting {
