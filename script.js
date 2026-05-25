@@ -1,9 +1,9 @@
 // ── Parallax hero ──
 (function () {
   const layers = [
-    { el: document.getElementById('parallax-1'), speed: 0.15 },
-    { el: document.getElementById('parallax-2'), speed: 0.35 },
-    { el: document.getElementById('parallax-3'), speed: 0.55 },
+    { el: document.getElementById('parallax-1'), speed: 0.1 },
+    { el: document.getElementById('parallax-2'), speed: 0.3 },
+    { el: document.getElementById('parallax-3'), speed: 0.5 },
   ];
 
   function onScroll() {

@@ -120,22 +120,45 @@ section {
 
 .parallax-layers {
   position: absolute;
-  inset: -30% 0 -30% 0;
+  inset: 0;
   z-index: 0;
 }
 
-.parallax-layer {
+/* Layer 1: full background */
+#parallax-1 {
   position: absolute;
-  inset: 0;
+  inset: -20% 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   will-change: transform;
 }
 
-#parallax-1 { transform: translateY(0%); }
-#parallax-2 { transform: translateY(0%); }
-#parallax-3 { transform: translateY(0%); }
+/* Layer 2: right half, slightly taller for travel room */
+#parallax-2 {
+  position: absolute;
+  top: -15%;
+  right: 0;
+  width: 55%;
+  bottom: -15%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+/* Layer 3: right side, foreground */
+#parallax-3 {
+  position: absolute;
+  top: -10%;
+  right: 0;
+  width: 40%;
+  bottom: -10%;
+  background-size: cover;
+  background-position: center left;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
 
 .hero-content {
   max-width: 640px;
