@@ -1,9 +1,11 @@
-// ── Parallax hero ──
+// ── Parallax hero (desktop only) ──
 (function () {
+  if (window.innerWidth <= 768) return;
+
   const layers = [
-    { el: document.getElementById('parallax-1'), speed: 0.65 },  // background - fastest
-    { el: document.getElementById('parallax-2'), speed: 0.45 },  // text - medium
-    { el: document.getElementById('parallax-3'), speed: 0.25 },  // desk - slowest
+    { el: document.getElementById('parallax-1'), speed: 0.65 },
+    { el: document.getElementById('parallax-2'), speed: 0.45 },
+    { el: document.getElementById('parallax-3'), speed: 0.25 },
   ];
 
   function onScroll() {
