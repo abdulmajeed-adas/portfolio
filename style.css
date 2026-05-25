@@ -159,6 +159,13 @@ section {
   z-index: 1;
   will-change: transform;
   text-align: center;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px 48px;
+  border: 1px solid rgba(255,255,255,0.8);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
 }
 
 .hero-greeting {
@@ -170,23 +177,26 @@ section {
 }
 
 .hero-content h1 {
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
-  font-weight: 700;
-  line-height: 1.15;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.1;
   letter-spacing: -1px;
   margin-bottom: 12px;
+  color: var(--text);
 }
 
 .hero-tagline {
   font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--text-muted);
+  font-weight: 700;
+  color: var(--text);
   margin-bottom: 16px;
 }
 
 .hero-sub {
   font-size: 1rem;
-  color: var(--text-muted);
+  font-weight: 500;
+  color: #374151;
   line-height: 1.6;
   margin-bottom: 36px;
 }
