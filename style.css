@@ -35,30 +35,24 @@ nav {
   top: 0; left: 0; right: 0;
   z-index: 100;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 16px 60px;
+  padding: 22px 60px;
   background: rgba(249, 250, 251, 0.85);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
 
-.nav-name {
-  font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: -0.3px;
-}
-
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 36px;
+  gap: 48px;
 }
 
 .nav-links a {
   text-decoration: none;
   color: var(--text-muted);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   transition: color 0.2s;
 }
@@ -66,10 +60,14 @@ nav {
 .nav-links a:hover { color: var(--accent); }
 
 .nav-resume-btn {
-  padding: 6px 16px;
+  position: absolute;
+  right: 60px;
+  text-decoration: none;
+  padding: 8px 20px;
   border: 1.5px solid var(--accent);
   border-radius: 6px;
   color: var(--accent) !important;
+  font-size: 1rem;
   font-weight: 600;
   transition: background 0.2s, color 0.2s !important;
 }
@@ -754,8 +752,8 @@ button.project-link {
 /* ── Responsive ── */
 @media (max-width: 768px) {
   nav {
-    padding: 16px 16px;
-    justify-content: center;
+    padding: 14px 16px;
+    justify-content: space-between;
   }
   #hero { padding: 0 24px; }
   .container { padding: 0 24px; }
@@ -763,20 +761,17 @@ button.project-link {
   .projects-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
 
-  .nav-name { display: none; }
-
   .nav-links {
-    gap: 4px;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+    gap: 2px;
+    flex: 1;
+    justify-content: space-evenly;
   }
 
   .nav-links a {
     color: var(--text);
     font-size: 0.8rem;
     font-weight: 600;
-    padding: 8px 8px;
+    padding: 7px 7px;
     border-radius: 8px;
     transition: background 0.2s, color 0.2s;
   }
@@ -787,7 +782,10 @@ button.project-link {
   }
 
   .nav-resume-btn {
+    position: static;
     font-size: 0.8rem;
-    padding: 8px 10px;
+    padding: 7px 10px;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 }
