@@ -114,9 +114,34 @@ section {
   display: flex;
   align-items: center;
   padding: 0 60px;
+  position: relative;
+  overflow: hidden;
 }
 
-.hero-content { max-width: 640px; }
+.parallax-layers {
+  position: absolute;
+  inset: -30% 0 -30% 0;
+  z-index: 0;
+}
+
+.parallax-layer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+#parallax-1 { transform: translateY(0%); }
+#parallax-2 { transform: translateY(0%); }
+#parallax-3 { transform: translateY(0%); }
+
+.hero-content {
+  max-width: 640px;
+  position: relative;
+  z-index: 1;
+}
 
 .hero-greeting {
   color: var(--accent);

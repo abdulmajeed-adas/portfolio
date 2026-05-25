@@ -1,3 +1,21 @@
+// ── Parallax hero ──
+(function () {
+  const layers = [
+    { el: document.getElementById('parallax-1'), speed: 0.15 },
+    { el: document.getElementById('parallax-2'), speed: 0.35 },
+    { el: document.getElementById('parallax-3'), speed: 0.55 },
+  ];
+
+  function onScroll() {
+    const scrollY = window.scrollY;
+    layers.forEach(({ el, speed }) => {
+      if (el) el.style.transform = `translateY(${scrollY * speed}px)`;
+    });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();
+
 // ── Project image gallery switcher ──
 function switchImg(mainId, thumb) {
   document.getElementById(mainId).src = thumb.src;
