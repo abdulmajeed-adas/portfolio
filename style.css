@@ -134,15 +134,12 @@ section {
   will-change: transform;
 }
 
-/* Layer 2: right half */
+/* Layer 2: skyline centered at bottom */
 #parallax-2 {
   position: absolute;
-  top: -15%;
-  right: 0;
-  width: 55%;
-  bottom: -15%;
-  background-size: cover;
-  background-position: center;
+  inset: 0;
+  background-size: 90% auto;
+  background-position: center bottom;
   background-repeat: no-repeat;
   will-change: transform;
 }
