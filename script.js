@@ -308,7 +308,7 @@ const ctx = canvas.getContext('2d');
 
 let mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
 let particles = [];
-const PARTICLE_COUNT = 60;
+const PARTICLE_COUNT = 67;
 
 function resize() {
   canvas.width = window.innerWidth;
