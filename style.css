@@ -170,7 +170,9 @@ section {
 
 /* ── Buttons ── */
 .btn-primary {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 16px 40px;
   background: var(--accent);
   color: #fff;
@@ -184,7 +186,9 @@ section {
 .btn-primary:hover { background: #1d4ed8; transform: translateY(-1px); }
 
 .btn-secondary {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 16px 40px;
   background: transparent;
   color: var(--accent);
@@ -565,7 +569,9 @@ section {
 }
 
 .btn-whatsapp {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px 28px;
   background: #25d366;
   color: #fff;
