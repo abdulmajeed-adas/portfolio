@@ -1,23 +1,3 @@
-// ── Parallax hero (desktop only) ──
-(function () {
-  if (window.innerWidth <= 768) return;
-
-  const layers = [
-    { el: document.getElementById('parallax-1'), speed: 0.65 },
-    { el: document.getElementById('parallax-2'), speed: 0.45 },
-    { el: document.getElementById('parallax-3'), speed: 0.25 },
-  ];
-
-  function onScroll() {
-    const scrollY = window.scrollY;
-    layers.forEach(({ el, speed }) => {
-      if (el) el.style.transform = `translateY(${scrollY * speed}px)`;
-    });
-  }
-
-  window.addEventListener('scroll', onScroll, { passive: true });
-})();
-
 // ── Project image gallery switcher ──
 function switchImg(mainId, thumb) {
   document.getElementById(mainId).src = thumb.src;

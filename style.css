@@ -110,46 +110,13 @@ section {
 
 /* ── Hero ── */
 #hero {
-  min-height: 130vh;
+  min-height: 100vh;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  padding: 100px 60px 0;
+  padding: 100px 60px;
   position: relative;
-  overflow: hidden;
   text-align: center;
-}
-
-.parallax-layers {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-
-/* Layer 1: full background */
-#parallax-1 {
-  position: absolute;
-  inset: -20% 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  will-change: transform;
-}
-
-/* Layer 3: desk image sitting at bottom center */
-.parallax-desk-wrap {
-  position: absolute;
-  bottom: 0%;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.parallax-desk {
-  width: 100%;
-  display: block;
-  will-change: transform;
 }
 
 .hero-content {
@@ -157,13 +124,6 @@ section {
   width: 100%;
   position: relative;
   z-index: 1;
-  will-change: transform;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.82);
-  border-radius: 20px;
-  padding: 40px 48px;
-  border: 1px solid rgba(255,255,255,0.9);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
 }
 
 .hero-greeting {
@@ -806,29 +766,12 @@ button.project-link {
     padding: 14px 16px;
     justify-content: space-between;
   }
-  /* ── Hero: revert to particles on mobile ── */
   #hero {
-    min-height: 100vh;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0 24px;
+    padding: 100px 24px;
     text-align: left;
   }
 
-  .parallax-layers,
-  .parallax-desk-wrap { display: none; }
-
-  .hero-content {
-    background: none;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-    border: none;
-    box-shadow: none;
-    padding: 0;
-    text-align: left;
-    will-change: auto;
-    transform: none !important;
-  }
+  .hero-content { text-align: left; }
 
   .hero-btns { justify-content: flex-start; }
   .container { padding: 0 24px; }
