@@ -81,6 +81,32 @@
 
         <div class="project-card">
           <div class="project-header">
+            <h3>Etmam — AI/LLM-Powered NGO Capacity Assessment Platform</h3>
+            <div class="project-tags">
+              <span class="tag">Cloudflare Workers</span>
+              <span class="tag">Claude AI</span>
+              <span class="tag">Supabase</span>
+            </div>
+          </div>
+          <div class="project-gallery">
+            <div class="gallery-main" onclick="openLightbox('ngo-thumbs')">
+              <img src="ngo-assessment-overview.png" alt="NGO assessment tool overview" id="ngo-main-img">
+              <div class="gallery-hint">View Images</div>
+            </div>
+            <div class="gallery-thumbs" id="ngo-thumbs">
+              <img src="ngo-assessment-overview.png" alt="Assessment overview" class="thumb active" onclick="switchImg('ngo-main-img', this)">
+              <img src="ngo-assessment-indicator.png" alt="Indicator scoring" class="thumb" onclick="switchImg('ngo-main-img', this)">
+            </div>
+          </div>
+          <p>Full-stack capacity-assessment platform for youth NGOs, built in partnership with several Saudi youth-development organizations: a weighted 54-indicator rubric across 3 domains, evidence uploads, and a consultant review dashboard on Supabase (Postgres + RLS). Integrated Claude to generate complete, data-grounded Arabic consulting reports — executive summary, root-cause analysis, strategic recommendations — plus a matching Development Plan Excel workbook built from a real consultant template.</p>
+          <div class="project-footer">
+            <a href="https://etmam-ngo-tool.pages.dev" target="_blank" class="project-link">View Live →</a>
+            <span class="project-type freelance">Freelance · Paid</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
             <h3>AISANA — AI Marketing Agency</h3>
             <div class="project-tags">
               <span class="tag">Node.js</span>
