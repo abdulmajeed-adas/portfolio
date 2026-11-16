@@ -81,86 +81,30 @@
 
         <div class="project-card">
           <div class="project-header">
-            <h3>Etmam — AI/LLM-Powered NGO Capacity Assessment Platform</h3>
+            <h3>Rubriq — Assessment-to-Report Platform Website</h3>
             <div class="project-tags">
-              <span class="tag">Cloudflare Workers</span>
-              <span class="tag">Claude AI</span>
-              <span class="tag">Supabase</span>
+              <span class="tag">HTML/CSS/JS</span>
+              <span class="tag">Bilingual EN/AR</span>
+              <span class="tag">Cloudflare Pages</span>
             </div>
           </div>
           <div class="project-gallery">
-            <div class="gallery-main" onclick="openLightbox('ngo-thumbs')">
-              <img src="ngo-report-domain-chart.png" alt="AI-generated report — domain analysis chart" id="ngo-main-img">
+            <div class="gallery-main" onclick="openLightbox('rubriq-thumbs')">
+              <img src="rubriq-home.jpg" alt="Rubriq homepage hero" id="rubriq-main-img">
               <div class="gallery-hint">View Images</div>
             </div>
-            <div class="gallery-thumbs" id="ngo-thumbs">
-              <img src="ngo-report-domain-chart.png" alt="Domain analysis chart" class="thumb active" onclick="switchImg('ngo-main-img', this)">
-              <img src="ngo-report-cover.png" alt="Generated report cover" class="thumb" onclick="switchImg('ngo-main-img', this)">
-              <img src="ngo-assessment-overview.png" alt="Assessment overview" class="thumb" onclick="switchImg('ngo-main-img', this)">
-              <img src="ngo-assessment-indicator.png" alt="Indicator scoring" class="thumb" onclick="switchImg('ngo-main-img', this)">
+            <div class="gallery-thumbs" id="rubriq-thumbs">
+              <img src="rubriq-home.jpg" alt="Homepage hero" class="thumb active" onclick="switchImg('rubriq-main-img', this)">
+              <img src="rubriq-methodology.jpg" alt="Methodology section" class="thumb" onclick="switchImg('rubriq-main-img', this)">
+              <img src="rubriq-output.jpg" alt="Report output showcase" class="thumb" onclick="switchImg('rubriq-main-img', this)">
+              <img src="rubriq-how-it-works.jpg" alt="How It Works page" class="thumb" onclick="switchImg('rubriq-main-img', this)">
+              <img src="rubriq-book-demo.jpg" alt="Book a demo page" class="thumb" onclick="switchImg('rubriq-main-img', this)">
             </div>
           </div>
-          <p>Full-stack capacity-assessment platform for youth NGOs, built in partnership with several Saudi youth-development organizations: a weighted 54-indicator rubric across 3 domains, evidence uploads, and a consultant review dashboard on Supabase (Postgres + RLS). Integrated Claude to generate complete, data-grounded Arabic consulting reports — executive summary, root-cause analysis, strategic recommendations — plus a matching Development Plan Excel workbook built from a real consultant template.</p>
+          <p>Marketing site for Rubriq, a product that builds and runs a dedicated assessment-to-report platform for each consulting firm, turning their rubric into finished, data-grounded reports and development plans. Hand-built multi-page static site with no framework: full English/Arabic switching with RTL layouts, responsive illustrated sections rebuilt in HTML/CSS from design mockups for sharp rendering, a calendar-based demo booking flow, and a contact form.</p>
           <div class="project-footer">
-            <a href="https://etmam-ngo-tool.pages.dev" target="_blank" class="project-link">View Live →</a>
-            <span class="project-type freelance">Freelance · Paid</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3>AISANA — AI Marketing Agency</h3>
-            <div class="project-tags">
-              <span class="tag">Node.js</span>
-              <span class="tag">Claude AI</span>
-              <span class="tag">SaaS</span>
-            </div>
-          </div>
-          <div class="project-gallery">
-            <div class="gallery-main" onclick="openLightbox('aisana-thumbs')">
-              <img src="aisana1.png" alt="AISANA overview" id="aisana-main-img">
-              <div class="gallery-hint">View Images</div>
-            </div>
-            <div class="gallery-thumbs" id="aisana-thumbs">
-              <img src="aisana1.png" alt="AISANA 1" class="thumb active" onclick="switchImg('aisana-main-img', this)">
-              <img src="aisana2.png" alt="AISANA 2" class="thumb" onclick="switchImg('aisana-main-img', this)">
-              <img src="aisana3.png" alt="AISANA 3" class="thumb" onclick="switchImg('aisana-main-img', this)">
-              <img src="aisana4.png" alt="AISANA 4" class="thumb" onclick="switchImg('aisana-main-img', this)">
-              <img src="aisana5.png" alt="AISANA 5" class="thumb" onclick="switchImg('aisana-main-img', this)">
-            </div>
-          </div>
-          <p>Co-founded an AI marketing agency offering four services: a reputation engine that monitors and responds to reviews automatically, an AI customer assistant (website widget + WhatsApp bot), a local SEO foundation (Google Business Profile, directory citations, Maps ranking), and monthly intelligence reports with actionable analytics. Built the core SaaS infrastructure powering the chatbot service, deployed across 2 paying clients.</p>
-          <div class="project-footer">
-            <a href="https://aisana-website.pages.dev" target="_blank" class="project-link">View Live →</a>
-            <span class="project-type freelance">Co-founded · Live</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3>Solar Lead Capture</h3>
-            <div class="project-tags">
-              <span class="tag">TypeScript</span>
-              <span class="tag">React</span>
-              <span class="tag">AI</span>
-            </div>
-          </div>
-          <div class="project-gallery">
-            <div class="gallery-main" onclick="openLightbox('solar-thumbs')">
-              <img src="Solar lead 1.png" alt="Solar Lead Capture overview" id="solar-main-img">
-              <div class="gallery-hint">View Images</div>
-            </div>
-            <div class="gallery-thumbs" id="solar-thumbs">
-              <img src="Solar lead 1.png" alt="Overview" class="thumb active" onclick="switchImg('solar-main-img', this)">
-              <img src="solar lead 2.png" alt="Dashboard" class="thumb" onclick="switchImg('solar-main-img', this)">
-              <img src="solar lead 3.png" alt="Lead capture" class="thumb" onclick="switchImg('solar-main-img', this)">
-              <img src="solar lead 4.png" alt="Proposal output" class="thumb" onclick="switchImg('solar-main-img', this)">
-            </div>
-          </div>
-          <p>Full-stack lead generation platform for solar installations. Built a React frontend with user authentication, a database-integrated dashboard, an OCR pipeline using Google Vision API to extract data from Saudi electricity bills, and DeepSeek AI integration to auto-generate solar proposals at ~90% accuracy.</p>
-          <div class="project-footer">
-            <a href="https://solar.entek.ai" target="_blank" class="project-link">View Live →</a>
-            <span class="project-type freelance">Team Project</span>
+            <a href="https://rubriq.pages.dev" target="_blank" class="project-link">View Live →</a>
+            <span class="project-type in-progress"><span class="pulse-dot"></span>In Progress</span>
           </div>
         </div>
 
@@ -195,6 +139,62 @@
 
         <div class="project-card">
           <div class="project-header">
+            <h3>Solar Lead Capture</h3>
+            <div class="project-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">React</span>
+              <span class="tag">AI</span>
+            </div>
+          </div>
+          <div class="project-gallery">
+            <div class="gallery-main" onclick="openLightbox('solar-thumbs')">
+              <img src="Solar lead 1.png" alt="Solar Lead Capture overview" id="solar-main-img">
+              <div class="gallery-hint">View Images</div>
+            </div>
+            <div class="gallery-thumbs" id="solar-thumbs">
+              <img src="Solar lead 1.png" alt="Overview" class="thumb active" onclick="switchImg('solar-main-img', this)">
+              <img src="solar lead 2.png" alt="Dashboard" class="thumb" onclick="switchImg('solar-main-img', this)">
+              <img src="solar lead 3.png" alt="Lead capture" class="thumb" onclick="switchImg('solar-main-img', this)">
+              <img src="solar lead 4.png" alt="Proposal output" class="thumb" onclick="switchImg('solar-main-img', this)">
+            </div>
+          </div>
+          <p>Full-stack lead generation platform for solar installations. Built a React frontend with user authentication, a database-integrated dashboard, an OCR pipeline using Google Vision API to extract data from Saudi electricity bills, and DeepSeek AI integration to auto-generate solar proposals at ~90% accuracy.</p>
+          <div class="project-footer">
+            <a href="https://solar.entek.ai" target="_blank" class="project-link">View Live →</a>
+            <span class="project-type freelance">Team Project</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Etmam — AI/LLM-Powered NGO Capacity Assessment Platform</h3>
+            <div class="project-tags">
+              <span class="tag">Cloudflare Workers</span>
+              <span class="tag">Claude AI</span>
+              <span class="tag">Supabase</span>
+            </div>
+          </div>
+          <div class="project-gallery">
+            <div class="gallery-main" onclick="openLightbox('ngo-thumbs')">
+              <img src="ngo-report-domain-chart.png" alt="AI-generated report — domain analysis chart" id="ngo-main-img">
+              <div class="gallery-hint">View Images</div>
+            </div>
+            <div class="gallery-thumbs" id="ngo-thumbs">
+              <img src="ngo-report-domain-chart.png" alt="Domain analysis chart" class="thumb active" onclick="switchImg('ngo-main-img', this)">
+              <img src="ngo-report-cover.png" alt="Generated report cover" class="thumb" onclick="switchImg('ngo-main-img', this)">
+              <img src="ngo-assessment-overview.png" alt="Assessment overview" class="thumb" onclick="switchImg('ngo-main-img', this)">
+              <img src="ngo-assessment-indicator.png" alt="Indicator scoring" class="thumb" onclick="switchImg('ngo-main-img', this)">
+            </div>
+          </div>
+          <p>Full-stack capacity-assessment platform for youth NGOs, built in partnership with several Saudi youth-development organizations: a weighted 54-indicator rubric across 3 domains, evidence uploads, and a consultant review dashboard on Supabase (Postgres + RLS). Integrated Claude to generate complete, data-grounded Arabic consulting reports — executive summary, root-cause analysis, strategic recommendations — plus a matching Development Plan Excel workbook built from a real consultant template.</p>
+          <div class="project-footer">
+            <a href="https://etmam-ngo-tool.pages.dev" target="_blank" class="project-link">View Live →</a>
+            <span class="project-type freelance">Freelance · Paid</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
             <h3>Al Takhasossy Manufacturing Website</h3>
             <div class="project-tags">
               <span class="tag">Wix</span>
@@ -220,6 +220,35 @@
           <div class="project-footer">
             <a href="https://takhassosy.com" target="_blank" class="project-link">View Live →</a>
             <span class="project-type freelance">Freelance · Paid</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>AISANA — AI Marketing Agency</h3>
+            <div class="project-tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Claude AI</span>
+              <span class="tag">SaaS</span>
+            </div>
+          </div>
+          <div class="project-gallery">
+            <div class="gallery-main" onclick="openLightbox('aisana-thumbs')">
+              <img src="aisana1.png" alt="AISANA overview" id="aisana-main-img">
+              <div class="gallery-hint">View Images</div>
+            </div>
+            <div class="gallery-thumbs" id="aisana-thumbs">
+              <img src="aisana1.png" alt="AISANA 1" class="thumb active" onclick="switchImg('aisana-main-img', this)">
+              <img src="aisana2.png" alt="AISANA 2" class="thumb" onclick="switchImg('aisana-main-img', this)">
+              <img src="aisana3.png" alt="AISANA 3" class="thumb" onclick="switchImg('aisana-main-img', this)">
+              <img src="aisana4.png" alt="AISANA 4" class="thumb" onclick="switchImg('aisana-main-img', this)">
+              <img src="aisana5.png" alt="AISANA 5" class="thumb" onclick="switchImg('aisana-main-img', this)">
+            </div>
+          </div>
+          <p>Co-founded an AI marketing agency offering four services: a reputation engine that monitors and responds to reviews automatically, an AI customer assistant (website widget + WhatsApp bot), a local SEO foundation (Google Business Profile, directory citations, Maps ranking), and monthly intelligence reports with actionable analytics. Built the core SaaS infrastructure powering the chatbot service, deployed across 2 paying clients.</p>
+          <div class="project-footer">
+            <a href="https://aisana-website.pages.dev" target="_blank" class="project-link">View Live →</a>
+            <span class="project-type freelance">Co-founded · Live</span>
           </div>
         </div>
 

@@ -452,7 +452,8 @@ section {
 .gallery-thumbs .thumb:hover { opacity: 1; }
 .gallery-thumbs .thumb.active { border-color: var(--accent); opacity: 1; }
 
-#aisana-thumbs .thumb { width: calc(20% - 5px); flex-shrink: 0; }
+#aisana-thumbs .thumb,
+#rubriq-thumbs .thumb { width: calc(20% - 5px); flex-shrink: 0; }
 
 /* ── Skills ── */
 #skills {
